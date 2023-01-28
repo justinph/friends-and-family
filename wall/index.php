@@ -33,12 +33,11 @@ function allowAccess() {
 
 
 if ($_POST && ($_POST['dog'] || $_POST['city']) ) {
-  if (strtolower(trim($_POST['dog'])) === 'django') {
+  if (strtolower(trim($_POST['dog'])) === 'fido') {
     allowAccess();
   } elseif (
-    strtolower(trim($_POST['city'])) === 'nyc' ||
-    strtolower(trim($_POST['city'])) === 'new york' ||
-    strtolower(trim($_POST['city'])) === 'new york city'
+    strtolower(trim($_POST['city'])) === 'chicago' ||
+    strtolower(trim($_POST['city'])) === 'chitown'
   ) {
     allowAccess();
   } else {

@@ -76,13 +76,13 @@
         <?php if (isset($message)) { echo "<p id='message'>$message</p>"; } ?>
         <fieldset>
           <legend>Question 1</legend>
-          <label for="dog">What is the Heideheim dog named?</label>
+          <label for="dog">What a common dog name?</label>
           <input type="text" name="dog" id="dog" />
         </fieldset>
           <p style="margin-bottom:-1rem;">- OR -</p>
         <fieldset>
           <legend>Question 2</legend>
-          <label for="city">What city did Adrienne and Justin live in 2016?</label>
+          <label for="city">What is the biggest city in Illinois?</label>
           <input type="text" name="city" id="city" />
         </fieldset>
         <input type="submit" value="Submit" id='submit' />

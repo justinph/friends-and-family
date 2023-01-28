@@ -1,5 +1,10 @@
 index.php
 !/wall/index.php
+!wp-content
+wp-content/*
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/friends-and-family/
 license.txt
 readme.html
 wp-activate.php
@@ -8,12 +13,6 @@ wp-blog-header.php
 wp-comments-post.php
 wp-config-sample.php
 wp-config.php
-!wp-content
-wp-content/*
-!wp-content/plugins/
-
-wp-content/plugins/*
-!wp-content/plugins/friends-and-family/
 wp-cron.php
 wp-includes
 wp-links-opml.php
