@@ -8,7 +8,12 @@ wp-blog-header.php
 wp-comments-post.php
 wp-config-sample.php
 wp-config.php
-wp-content
+!wp-content
+wp-content/*
+!wp-content/plugins/
+
+wp-content/plugins/*
+!wp-content/plugins/friends-and-family/
 wp-cron.php
 wp-includes
 wp-links-opml.php
