@@ -21,3 +21,33 @@
  * License URI:       https://opensource.org/licenses/MIT
  * Update URI:        https://fiddlyio.com/friends-and-family/
  */
+
+
+
+function fnf_setting_callback_function($args){
+	echo '<input type="text" id="fnf_setting-id" />';
+}
+
+function fnf_register_settings() {
+	$args = array(
+			'type' => 'string',
+      'description' => 'FNF awesome test',
+			'sanitize_callback' => 'sanitize_text_field',
+			'default' => NULL,
+			);
+    register_setting( 'general', 'fnf_derp_test', $args );
+
+
+  add_settings_field(
+    'fnf_setting-id', // id
+    'FNF Question', // title
+    'fnf_setting_callback_function', // callbak
+    'general', // page
+    'default', // section
+    array( 'label_for' => 'fnf_setting-id' )  // args
+  );
+
+}
+add_action( 'admin_init', 'fnf_register_settings' );
+
+
